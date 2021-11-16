@@ -1,0 +1,180 @@
+@import "../atomos/atomos.scss";
+
+.Navbar {
+  background-color: $primary;
+  width:100%;
+
+}
+
+ul {
+   list-style-type: none;
+}
+
+.alinear {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100px;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline;
+    text-align: left;
+  }
+
+  li h3 {
+    margin: 0;
+    color: white;
+  }
+
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+      li {
+        margin-right: 2rem;
+      }
+
+
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+      li {
+        margin-left: 2rem;
+      }
+      .cart {
+        width: 60px;
+        padding-right: 3px;
+      }
+
+  }
+
+}
+
+
+.navbutton {
+  cursor: pointer;
+  height: 30px;
+  margin: 0.5rem;
+
+  border: none;
+  border-radius: 3px;
+}
+
+.navsize {
+  width: 600px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.store-name {
+  font-weight: 900;
+
+  color: $primary;
+  background-color: white;
+
+  outline: 1px solid white;
+  outline-offset: 5px;
+  border-radius: 2px;
+
+
+}
+
+.navbar-a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: $linkHover;
+  }
+}
+
+.font-28 {
+  font-size: 28px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+
+.logout {
+  cursor: pointer;
+
+  border: none;
+  border-radius: 3px;
+
+  height: 2rem;
+  width: 6rem;
+
+  background-color: rgb(174, 195, 227);
+  box-shadow: 2px 2px 2px black;
+
+  &:hover {
+    background-color: rgb(132, 157, 195);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0,0.5) ;
+  }
+}
+
+.active {
+  outline: 1px solid white;
+  outline-offset: 5px;
+  border-radius: 2px;
+
+  // text-decoration: white;
+
+}
+
+.cart-icons {
+  position: relative;
+
+}
+
+.number-items {
+  background-color: rgb(245, 44, 67);
+  color: white;
+  border-radius: 50%;
+
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  position: absolute;
+  right: 15px;
+
+  text-align: center;
+}
+
+.no-outline {
+  outline: none;
+}
+
+.store-logo {
+  width: 60px;
+}
+
+.create-item {
+  background-color:rgb(232, 179, 77);
+  box-shadow: 2px 2px 2px black;
+
+  &:hover {
+    background-color: rgb(255, 168, 0);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0,0.5) ;
+  }
+}
